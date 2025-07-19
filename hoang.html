@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cafe Dream - Quán Cafe & Trà Sữa</title>
+    <style>
+        body {
+            background: #f8f6f0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background: #964b00;
+            color: white;
+            text-align: center;
+            padding: 18px 0 8px 0;
+        }
+
+        nav {
+            text-align: center;
+            background: #ffe4b5;
+            padding: 10px 0 10px 0;
+        }
+
+        nav a {
+            color: #964b00;
+            padding: 4px 10px;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 18px 10px 30px 10px;
+        }
+
+        .hero {
+            color: #333;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            gap: 40px;
+            padding: 64px 4vw 32px 4vw;
+            flex-wrap: wrap;
+        }
+
+        .hero-content {
+            max-width: 440px;
+        }
+
+        .hero-content h2 {
+            font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+            color: #964b00;
+            font-style: 36px;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+        .menu-section {
+            background-color: #ffe4b5;
+            border-radius: 18px;
+            margin: 40px auto 32px auto;
+            padding: 16px 0 32px 0;
+            max-width: 1100px;
+        }
+        .menu-list-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+        }
+        .menu-group {
+            min-width: 270px;
+            max-width: 320px;
+            flex: 1 1 290;
+        }
+
+        .menu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .menu-card{
+            background: #fff;
+            color: #964b00;
+            display: flex;
+            align-items: center;
+            border: 2px solid #ffe4b5;
+            border-radius: 18px;
+            padding: 12px 14px;
+            gap: 18px;
+        }
+        .menu-card img{
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
+            background:  #fff8e1;
+            box-shadow: 0 2px 8px -4px #964b00;
+        }
+        .menu-info .item-name{
+            font-weight: 800;
+            font-size: 20x;
+            margin-bottom: 2px;
+        }
+        .menu-info .item-desc {
+            font-size: 15px;
+            color:  #555;
+        }
+        .menu-info .item-price {
+            color: #e4572e;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 2px;
+        }
+        @media (max-width: 1024px) {
+            .menu-section {
+                margin: 0 auto;
+                max-width: 780px;
+            }
+            .menu-list-container {
+                align-items: center;
+                justify-content: flex-start;
+                margin-left: 48px;
+                gap: 46px;
+            }
+        }
+        @media (max-width: 767px) {
+            
+        }
+        @media (max-width: 425px) {
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CAFE DREAM</h1>
+        <p>Nhà hàng & Cafe hiện đại - Đậm chất Việt, phong cách Châu Âu</p>
+    </header>
+    <nav>
+        <a href="#gioi_thieu">Gioi Thiệu</a>
+        <a href="#menu">Menu</a>
+        <a href="#dat_ban">Đặt bàn</a>
+        <a href="#lien_he">Liên hệ</a>
+    </nav>
+    <main>
+        <!--Gioi thiệu-->
+        <section id="gioi_thieu" class="hero">
+            <div class="hero-content">
+                <h2>Chào mừng đến với Cafe Dream!</h2>
+                <p>
+                    Chào mừng bạn đến với Cafe Dream!
+                    Không gian ấm cúng, <strong>menu đa dạng</strong>, phục vụ tận tình.
+                    Thành lập năm 2020<sub>TM</sub>, luôn đổi mới từng ngày!
+                </p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+                    alt="Không gian quán Cafe Dream"
+                    style="width:280px; border-radius:12px; box-shadow:0 4px 16px -6px #964b00;">
+            </div>
+        </section>
+        <!--Menu-->
+        <section id="menu" class="menu-section">
+            <h2 style="color: #964b00; text-align: center ;">Thực đơn nổi bật</h2>
+            <div class="menu-list-container">
+                <div class="menu-group">
+                    <h3>Đồ uống</h3>
+                    <div class="menu-list">
+                        <div class="menu-card">
+                            <img src="img/caphe.jpg" alt="">
+                            <div class="menu-info">
+                                <div class="item-name">Trà sua tran chau</div>
+                                <div class="item-desc">Trà đen thơm, sữa tươi, trân châu dẻo. Phù hợp mọi lứa tuổi.</div>
+                                <div class="item-price">35.000đ</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="img/macha.jpg" alt="">
+                            <div class="menu-info">
+                                <div class="item-name">Trà sua tran chau</div>
+                                <div class="item-desc">Trà đen thơm, sữa tươi, trân châu dẻo. Phù hợp mọi lứa tuổi.</div>
+                                <div class="item-price">35.000đ</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="img/tradao.jpg" alt="">
+                            <div class="menu-info">
+                                <div class="item-name">Trà sua tran chau</div>
+                                <div class="item-desc">Trà đen thơm, sữa tươi, trân châu dẻo. Phù hợp mọi lứa tuổi.</div>
+                                <div class="item-price">35.000đ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-group">
+                    <h3>Đồ uống</h3>
+                    <div class="menu-list">
+                        <div class="menu-card">
+                            <img src="img/caphe.jpg" alt="">
+                            <div class="menu-info">
+                                <div class="item-name">Trà sua tran chau</div>
+                                <div class="item-desc">Trà đen thơm, sữa tươi, trân châu dẻo. Phù hợp mọi lứa tuổi.</div>
+                                <div class="item-price">35.000đ</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="img/macha.jpg" alt="">
+                            <div class="menu-info">
+                                <div class="item-name">Trà sua tran chau</div>
+                                <div class="item-desc">Trà đen thơm, sữa tươi, trân châu dẻo. Phù hợp mọi lứa tuổi.</div>
+                                <div class="item-price">35.000đ</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="img/tradao.jpg" alt="">
+                            <div class="menu-info">
+                                <div class="item-name">Trà sua tran chau</div>
+                                <div class="item-desc">Trà đen thơm, sữa tươi, trân châu dẻo. Phù hợp mọi lứa tuổi.</div>
+                                <div class="item-price">35.000đ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-group">
+                    <h3>Đồ uống</h3>
+                    <div class="menu-list">
+                        <div class="menu-card">
+                            <img src="img/caphe.jpg" alt="">
+                            <div class="menu-info">
+                                <div class="item-name">Trà sua tran chau</div>
+                                <div class="item-desc">Trà đen thơm, sữa tươi, trân châu dẻo. Phù hợp mọi lứa tuổi.</div>
+                                <div class="item-price">35.000đ</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="img/macha.jpg" alt="">
+                            <div class="menu-info">
+                                <div class="item-name">Trà sua tran chau</div>
+                                <div class="item-desc">Trà đen thơm, sữa tươi, trân châu dẻo. Phù hợp mọi lứa tuổi.</div>
+                                <div class="item-price">35.000đ</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="img/tradao.jpg" alt="">
+                            <div class="menu-info">
+                                <div class="item-name">Trà sua tran chau</div>
+                                <div class="item-desc">Trà đen thơm, sữa tươi, trân châu dẻo. Phù hợp mọi lứa tuổi.</div>
+                                <div class="item-price">35.000đ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="dat_ban">
+            <h2>Đặt bài online</h2>
+            <form>
+                <label>Họ tên *</label>
+                <input type="text" name="ten" placeholder="nhập họ tên" required />
+                <label>Số điện thoại *</label>
+                <input type="tel" name="phone" placeholder="nhập số điện thoại" required />
+                <label>Ngày đặt *</label>
+                <input type="date" name="date" required />
+                <label>Gio đặt *</label>
+                <input type="time" name="time" required />
+                <label>Số khách *</label>
+                <select name="number" required>
+                    <option value="0">Chọn số khách</option>
+                    <option value="1-2">1-2 người</option>
+                    <option value="3-5">3-5 người</option>
+                    <option value="6-10">6-10 người</option>
+                    <option value=">10">trên 10 người</option>
+                </select>
+                <label>Ghi chú</label>
+                <textarea name="note" placeholder="Yêu cầu đặc biệt (nếu có)" rows="2"></textarea>
+                <button type="submit">Gửi đặt bàn</button>
+            </form>
+        </section>
+        <!--Liên hệ-->
+        <section id="lien_he">
+            <h2>Liên hệ & Địa chỉ</h2>
+            <p>Cafe Dream - Nhà hàng & Cafe hiện đại</p>
+            <p>Địa chỉ: 123 Đường Cafe, Quận 1, TP.HCM <br>
+                Hotline: <span>0901 234 567</span><br>
+                Email: cafedream@email.com
+            </p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Cafe Dream - Nhà hàng & Cafe hiện đại | Thiết kế bởi <b>Hoang</b> !
+    </footer>
+</body>
+
+</html>
